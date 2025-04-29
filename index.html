@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pizzaria.css">   
+    <title>pizzaria</title>
+</head>
+<body>
+    <h1>Pizzaria mijugi</h1>
+    <form consubmit="salvadado"(event)>
+<input type="text" placeholder="login" id="login" required>
+<input type="password" placeholder="senha" id="senha" required>
+<input type="email"placeholder="email" id="email" required>
+<input type="telefone"placeholder='telefone'id="telefone"required>
+<input type="submit" value="cadastrar">
+    </form>
+    <script>
+        function logar (){
+       var login=document.gpteleventbyID ('login').value;
+      var senha=document.getelementbyID ('senha').value;
+     
+      if (login=="admin" && senha=="123"){
+           alert ('sucesso');
+            location.href="home.html";
+                        
+               }
+               else{
+          alert ('usuario ou senha incorreta');
+               }
+             }
+          </script>
+     
+</body>
+</html>
